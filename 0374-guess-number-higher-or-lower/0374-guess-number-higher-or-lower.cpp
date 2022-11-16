@@ -15,7 +15,7 @@ public:
         int mid= 0;
         int ans;
         
-        while(left<right){
+        while(left<=right){
             mid = left+ (right-left)/2;
            ans = guess(mid);
             if(ans==0){
@@ -33,6 +33,6 @@ public:
             
             
         }
-        return left;
+        return -1;
     }
 };
